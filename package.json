@@ -1,0 +1,12 @@
+{
+  "name": "snake-and-ladder",
+  "version": "1.0.0",
+  "description": "Snake and Ladder web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
