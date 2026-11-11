@@ -1,0 +1,21 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: snake-and-ladder
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: snake-and-ladder
+  template:
+    metadata:
+      labels:
+        app: snake-and-ladder
+    spec:
+      containers:
+        - name: snake-and-ladder
+          image: 471371516697.dkr.ecr.ap-southeast-2.amazonaws.com/snake-and-ladder:latest
+          ports:
+            - containerPort: 3000
+
